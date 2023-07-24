@@ -25,7 +25,7 @@ pipeline {
         steps {
           sh "printenv"
           sh "docker build -t afdonoso/numeric-app:${GIT_COMMIT} ."
-          sh "docker push afdonoso/numeric-app:${GIT_COMMIT} ."
+          sh "docker push afdonoso/numeric-app:${GIT_COMMIT}"
         }
       }
   }
